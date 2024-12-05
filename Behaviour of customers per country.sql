@@ -25,12 +25,12 @@ FROM`bank-churn-441509.bank_churn.churn`
 SELECT
   Geography,
   ROUND(COUNT(CASE WHEN Exited = 1 then CustomerId END) / 
-  (COUNT(CASE WHEN Exited = 0 then CustomerId END)), 1)* 100  AS ratio_yes_noExcited,
-  COUNT(CASE WHEN Exited = 1 then CustomerId END), 
-   COUNT(CASE WHEN Exited = 0 then CustomerId END)
+  (COUNT(CASE WHEN Exited = 0 then CustomerId END))* 100, 1)  AS percent_yes_noExcited,
+   COUNT(CASE WHEN Exited = 1 then CustomerId END) AS exited_customers, 
+   COUNT(CASE WHEN Exited = 0 then CustomerId END) AS non_exited_customers,
+   ROUND(COUNT(CASE WHEN Exited = 1 then CustomerId END)/ COUNT(CustomerId)*100, 1) AS percent_ofExited_perCounry
 FROM
   `bank-churn-441509.bank_churn.churn`
-GROUP BY Geography;
 GROUP BY Geography;
 
 -- Чи має клієнт картку
