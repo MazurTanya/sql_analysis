@@ -45,6 +45,12 @@
  
     ![image](https://github.com/user-attachments/assets/090e8221-12c0-430c-b30b-212c910d66b9)
 
+- 
+
+
+![age_group_exited](https://github.com/user-attachments/assets/151519e7-4013-4b72-9760-417b9b7b1880)
+
+
 
 
 
