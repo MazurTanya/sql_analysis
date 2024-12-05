@@ -25,16 +25,20 @@
 
 - Кількість задоволених клієнтів по країнах
 
-![image](https://github.com/user-attachments/assets/a8998268-0b50-4356-9b03-ae7778e50c07)
+![geography_churned](https://github.com/user-attachments/assets/66e99696-150a-4ef9-803a-07b55254098d)
+
+
 
 ####  2. Які атрибути для клієнтів задоволених та незадоволених?
 - Загальна кількість та частка задоволених/незадоволених клієнтів
 
-  ![1_excited-density_customers](https://github.com/user-attachments/assets/2a772f91-bfe9-45eb-a7e7-dda518d0d431)
+  ![percent_churnedClient](https://github.com/user-attachments/assets/629cd891-c140-42eb-99ad-909ff22bd714)
+
 
 - Чи задоволені клієнти в залежності від використання банківських продуктів?
 
-  ![exited_Num_products](https://github.com/user-attachments/assets/50731e98-d498-4208-a8a5-f47df2c07b53)
+  ![churnedClient_NumOfProduct](https://github.com/user-attachments/assets/8d07bdc9-b448-40d3-9d1a-895bd5505c79)
+
 
  - Від середньої зарплатні та середнього строку перебування в банку
 
