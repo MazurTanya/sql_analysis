@@ -12,7 +12,7 @@ FROM
 SELECT
   Exited,
   ROUND(AVG(Balance)) AS avg_balance,
-  ROUND(AVG(Tenure)) AS avg_tenure,
+  ROUND(AVG(Tenure), 1) AS avg_tenure,
   ROUND(AVG(EstimatedSalary)) AS avg_salary
 FROM
   `bank-churn-441509.bank_churn.churn`
