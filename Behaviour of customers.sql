@@ -11,6 +11,7 @@ WHERE
 ORDER BY Balance DESC
 LIMIT 5;
 
+-- the influence of the balance on Exited customers 
 SELECT Exited,
   COUNT(CustomerId) AS quantity_customers,
   ROUND(MIN(Balance)) AS min_balance,
