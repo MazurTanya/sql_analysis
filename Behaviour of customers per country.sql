@@ -21,14 +21,12 @@ SELECT Geography,
       ROUND(AVG(Balance), 1) AS avg_balance
 FROM`bank-churn-441509.bank_churn.churn`
 
--- Задоволені/незадоволені клієнти в залежності від країни
+-- Втрачений/поточний клієнти в залежності від країни
 SELECT
   Geography,
-  ROUND(COUNT(CASE WHEN Exited = 1 then CustomerId END) / 
-  (COUNT(CASE WHEN Exited = 0 then CustomerId END))* 100, 1)  AS percent_yes_noExcited,
-   COUNT(CASE WHEN Exited = 1 then CustomerId END) AS exited_customers, 
-   COUNT(CASE WHEN Exited = 0 then CustomerId END) AS non_exited_customers,
-   ROUND(COUNT(CASE WHEN Exited = 1 then CustomerId END)/ COUNT(CustomerId)*100, 1) AS percent_ofExited_perCounry
+   COUNT(CASE WHEN Exited = 1 then CustomerId END) AS churnedClient, 
+   COUNT(CASE WHEN Exited = 0 then CustomerId END) AS non_churnedClient,
+   ROUND(COUNT(CASE WHEN Exited = 1 then CustomerId END)/ COUNT(CustomerId)*100, 1) AS percent_ofChurnedClient_perCountry
 FROM
   `bank-churn-441509.bank_churn.churn`
 GROUP BY Geography;
