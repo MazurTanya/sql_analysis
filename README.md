@@ -28,11 +28,20 @@
 ![image](https://github.com/user-attachments/assets/a8998268-0b50-4356-9b03-ae7778e50c07)
 
 ####  2. Які атрибути для клієнтів задоволених та незадоволених?
-- Кількість задоволених/незадоволених клієнтів
+- Загальна кількість та частка задоволених/незадоволених клієнтів
 
   ![1_excited-density_customers](https://github.com/user-attachments/assets/2a772f91-bfe9-45eb-a7e7-dda518d0d431)
 
-- 
+- Чи задоволені клієнти в залежності від використання банківських продуктів?
+
+  ![exited_Num_products](https://github.com/user-attachments/assets/50731e98-d498-4208-a8a5-f47df2c07b53)
+
+  - Від стажу перебування в банку
+ 
+    ![image](https://github.com/user-attachments/assets/090e8221-12c0-430c-b30b-212c910d66b9)
+
+    
+
 
 
 
