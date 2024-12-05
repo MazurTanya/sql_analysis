@@ -36,9 +36,10 @@
 
   ![exited_Num_products](https://github.com/user-attachments/assets/50731e98-d498-4208-a8a5-f47df2c07b53)
 
-  - Від середнього балансу та середньої зарплатні
+ - Від середньої зарплатні та середнього строку перебування в банку
 
-   ![image](https://github.com/user-attachments/assets/b96e5c2c-01e2-468e-a357-1056fb8e0c0f)
+  ![image](https://github.com/user-attachments/assets/f9ee5ff8-8558-41ec-b373-e696ae61cf6a)
+
 
 - Від стажу перебування в банку
  
