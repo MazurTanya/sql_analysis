@@ -10,8 +10,9 @@
 ####  1. Яка поведінка у клієнтів по країнах:
 -  Розподіл по клієнтах в залежності від країни
    
-![2_geography](https://github.com/user-attachments/assets/4d3a2a6a-8219-497c-ac1a-a3a380c81f04)  
-- Основні характеристики клієнта:avg_tenure, avg_salary, avg_balance, avg_creditScore
+![2_geography](https://github.com/user-attachments/assets/4d3a2a6a-8219-497c-ac1a-a3a380c81f04) 
+
+- Основні характеристики клієнта:середній стаж, середня зарплатня, середній баланс та кредитний бал
 
 ![image](https://github.com/user-attachments/assets/8d62874c-5e69-4b25-8290-77207d603d85)
 
@@ -23,13 +24,14 @@
 
 ![3_сountry_IsActive](https://github.com/user-attachments/assets/e37c11a6-b5e8-4663-afbb-55cee38a3e80)
 
-- Кількість задоволених клієнтів по країнах
+- Кількість втрачених/поточних клієнтів по країнах
 
-![geography_churned](https://github.com/user-attachments/assets/66e99696-150a-4ef9-803a-07b55254098d)
+![geography_churned](https://github.com/user-attachments/assets/3ee2dbdb-921a-45d5-b491-2e8bef277c13)
 
 
 
-####  2. Які атрибути для клієнтів задоволених та незадоволених?
+
+####  2. Які характеристики для втрачених та поточних клієнтів
 - Загальна кількість та частка задоволених/незадоволених клієнтів
 
   ![percent_churnedClient](https://github.com/user-attachments/assets/629cd891-c140-42eb-99ad-909ff22bd714)
@@ -45,14 +47,16 @@
   ![image](https://github.com/user-attachments/assets/f9ee5ff8-8558-41ec-b373-e696ae61cf6a)
 
 
-- Від стажу перебування в банку
+- Кількість втрачених клієнтів і їх стаж перебування в банку
  
-    ![image](https://github.com/user-attachments/assets/090e8221-12c0-430c-b30b-212c910d66b9)
-
-- 
+   ![image](https://github.com/user-attachments/assets/ebb9509a-86d4-4df5-9067-1979444acff7)
 
 
-![age_group_exited](https://github.com/user-attachments/assets/151519e7-4013-4b72-9760-417b9b7b1880)
+- Розподіл втрачених клієнтів по віковим групам
+
+
+![image](https://github.com/user-attachments/assets/047e37e0-ffcc-46ac-8e07-c2d007a02030)
+
 
 
 
