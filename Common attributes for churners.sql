@@ -1,4 +1,4 @@
--- Кількість та частка задоволених/задоволених кліентів
+-- Кількість та частка втрачених/поточних кліентів
 SELECT
   COUNT(CASE WHEN Exited = 1 THEN CustomerId END) AS churnedClient,
   COUNT(CASE WHEN Exited = 0 THEN CustomerId END) AS non_churnedClient,
@@ -6,8 +6,8 @@ SELECT
   FROM
   `bank-churn-441509.bank_churn.churn`;
 
-/* Вплив середньої зарплатні та середнього строку перебування в банку
-   на клієнта */
+/* Чи впливає середня зарплатня та середній строк перебування в банку
+   на поведінку клієнта */
 SELECT
   Exited,
   ROUND(AVG(Tenure), 1) AS avg_tenure,
@@ -16,17 +16,17 @@ FROM
   `bank-churn-441509.bank_churn.churn`
 GROUP BY Exited;
 
-/* Втрачений клієнт в залежності від стажу перебування в банку
+/* Чи впливає стаж перебування в банку на рішення клієнта піти
 SELECT
-  COUNT(CustomerId) AS quantity_ExitedCustomers,
+  COUNT(CustomerId) AS quantity_churnedClients,
   Tenure
 FROM
   `bank-churn-441509.bank_churn.churn`
 WHERE
   Exited = 1
 GROUP BY Tenure
-ORDER BY COUNT(CustomerId) DESC;
-
+ORDER BY Tenure DESC;
+ 
 
 /*Співвідношення втрачених клієнтів до загальної кількості в залежності від того
   скільки продуктів банку вони використовували      
