@@ -31,7 +31,7 @@
 
 
 
-####  2. Які характеристики для втрачених та поточних клієнтів
+####  2. Поведінка втрачених та поточних клієнтів 
 - Загальна кількість та частка задоволених/незадоволених клієнтів
 
   ![percent_churnedClient](https://github.com/user-attachments/assets/629cd891-c140-42eb-99ad-909ff22bd714)
@@ -46,16 +46,27 @@
 
   ![image](https://github.com/user-attachments/assets/f9ee5ff8-8558-41ec-b373-e696ae61cf6a)
 
+  - Баланс клієнтів
+
+    ![image](https://github.com/user-attachments/assets/8e8aa36a-c05f-4033-9a74-75d9e6ba69eb)
+
 
 - Кількість втрачених клієнтів і їх стаж перебування в банку
  
    ![image](https://github.com/user-attachments/assets/ebb9509a-86d4-4df5-9067-1979444acff7)
 
-
+  
 - Розподіл втрачених клієнтів по віковим групам
 
 
 ![image](https://github.com/user-attachments/assets/047e37e0-ffcc-46ac-8e07-c2d007a02030)
+
+- 5 найцінніших клієнтів банку по балансу, використаних продуктів та активності
+
+  ![top5valuable_customers](https://github.com/user-attachments/assets/70d07f17-7b3c-4646-bebb-71915469e5a5)
+
+
+
 
 
 
