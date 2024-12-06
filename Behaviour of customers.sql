@@ -1,4 +1,5 @@
--- 5 valuable customers
+/* 5 найбільш активних клієнтів, в кого найбільший баланс
+   та використовує декілька продуктів, та є активним користувачем*/
 SELECT
   CustomerID,
   ROUND(Balance) AS balance
@@ -11,7 +12,7 @@ WHERE
 ORDER BY Balance DESC
 LIMIT 5;
 
--- the influence of the balance on Exited customers 
+-- який баланс у втраченого клієнта
 SELECT Exited,
   COUNT(CustomerId) AS quantity_customers,
   ROUND(MIN(Balance)) AS min_balance,
@@ -24,7 +25,7 @@ WHERE
 GROUP BY
   Exited;
 
--- age_group of exited customers
+-- вікова категорія клієнтів
 WITH by_age AS (
     SELECT Exited, 
     COUNT(CustomerId) AS number_customers,
@@ -36,17 +37,18 @@ WITH by_age AS (
       WHEN Age > 60 AND Age <= 70 THEN "age 61-70"
       WHEN Age > 70 AND Age <= 80 THEN "age 71-80"
       ELSE "after 80"
-  END
-    AS age_group
+  END   AS age_group
   FROM `bank-churn-441509.bank_churn.churn`
   GROUP BY Exited,
     age_group)
 SELECT
   age_group,
+  ROUND(MAX(CASE WHEN Exited = 1 THEN number_customers END), 2)*100 AS churned_clients,
+  ROUND(MAX(CASE WHEN Exited = 0 THEN number_customers END), 2)*100 AS nonChurned_clients,
   ROUND(MAX(CASE WHEN Exited = 1 THEN number_customers END), 2)*100/ 
-    (SELECT SUM(number_customers) FROM by_age) AS excited,
+    (SELECT SUM(number_customers) FROM by_age) AS percent_churnedClients,
   ROUND(MAX(CASE WHEN Exited = 0 THEN number_customers END), 2)*100/
-    (SELECT SUM(number_customers) FROM by_age) AS non_excited
+    (SELECT SUM(number_customers) FROM by_age) AS percent_NonChurnedClients
   FROM by_age
   GROUP BY age_group;
  
