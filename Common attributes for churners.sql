@@ -9,7 +9,7 @@ SELECT
 /* Чи впливає середня зарплатня та середній строк перебування в банку
    на поведінку клієнта */
 SELECT
-  Exited,
+  Exited AS churned_client,
   ROUND(AVG(Tenure), 1) AS avg_tenure,
   ROUND(AVG(EstimatedSalary)) AS avg_salary
 FROM
