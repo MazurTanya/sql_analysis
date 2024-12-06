@@ -1,14 +1,17 @@
 /* 5 найбільш активних клієнтів, в кого найбільший баланс
    та використовує декілька продуктів, та є активним користувачем*/
 SELECT
-  CustomerID,
+  CustomerID,Age, 
+  Tenure,
+  EstimatedSalary,
+   CreditScore,
   ROUND(Balance) AS balance
 FROM
   `bank-churn-441509.bank_churn.churn`
 WHERE
   NumOfProducts = 4 AND IsActiveMember= 1
  GROUP BY
-  CustomerID, Balance
+  CustomerID, Balance, Age, Tenure, EstimatedSalary, CreditScore
 ORDER BY Balance DESC
 LIMIT 5;
 
