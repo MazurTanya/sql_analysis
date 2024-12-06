@@ -46,12 +46,12 @@ WITH by_age AS (
     age_group)
 SELECT
   age_group,
-  ROUND(MAX(CASE WHEN Exited = 1 THEN number_customers END), 2)*100 AS churned_clients,
-  ROUND(MAX(CASE WHEN Exited = 0 THEN number_customers END), 2)*100 AS nonChurned_clients,
-  ROUND(MAX(CASE WHEN Exited = 1 THEN number_customers END), 2)*100/ 
-    (SELECT SUM(number_customers) FROM by_age) AS percent_churnedClients,
-  ROUND(MAX(CASE WHEN Exited = 0 THEN number_customers END), 2)*100/
-    (SELECT SUM(number_customers) FROM by_age) AS percent_NonChurnedClients
+  ROUND(MAX(CASE WHEN Exited = 1 THEN number_customers END), 2) AS churned_clients,
+  ROUND(MAX(CASE WHEN Exited = 0 THEN number_customers END), 2) AS nonChurned_clients,
+  ROUND(MAX(CASE WHEN Exited = 1 THEN number_customers END)/ 
+    (SELECT SUM(number_customers) FROM by_age)* 100, 2) AS percent_churnedClients_perAllClients,
+  ROUND(MAX(CASE WHEN Exited = 1 THEN number_customers END)/
+        MAX(CASE WHEN Exited = 0 THEN number_customers END)*100,2) AS percent_NonChurnedChurnedClients
   FROM by_age
   GROUP BY age_group;
  
