@@ -4,7 +4,7 @@
 
 [Використаний Dataset](https://www.kaggle.com/datasets/murilozangari/customer-churn-from-a-bank?select=Churn_Modelling.csv)
 
-[SQL Analysis (Code)]
+[SQL Analysis (Code)](https://github.com/MazurTanya/sql_analysis/tree/main/SQL_Queries)
 
 ##  Питання, на які я хотіла відповісти:
 ####  1. Яка поведінка у клієнтів по країнах:
